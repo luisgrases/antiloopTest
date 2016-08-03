@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Antiloop Coding Test</title>
+  <meta name="Antiloop Coding Test" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="bower_components/flexboxgrid/css/flexboxgrid.min.css" type="text/css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+
+  <div id="content">
+
+    <navigation-bar></navigation-bar>
+    
+    <carousel></carousel>
+
+    <section id="about" class="row">
+      <div id="about__content" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div id="about__content-wrap">
+          <h1 id="about__title">Some Text</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in cursus ipsum. Fusce mollis ipsum eget nunc fringilla, nec luctus massa iaculis. In laoreet est turpis, vitae eleifend odio facilisis vitae. Pellentesque tincidunt bibendum leo id posuere.</p>
+        </div>
+      </div>
+      <img class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="about__image" src="assets/images/about-photo.jpg">
+    </section>
+
+  </div>
+
+  <footer>
+    <p id="footer__message">We are looking forward to see your <span>solution</span>.</p>
+    <p id="footer__address"> Bailen, 11, bajos. 08010 Barcelona</p>
+  </footer>
+
+  <!-- 3rd party -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="lib/scripts/less.min.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- Project -->
+  <script src="app.module.js"></script>
+  <script src="navigation-bar/navigation-bar.component.js"></script>
+  <script src="navigation-bar/navigation-bar.controller.js"></script>
+  <script src="carousel/carousel.controller.js"></script>
+  <script src="carousel/carousel.component.js"></script>
+</body>
+</html>

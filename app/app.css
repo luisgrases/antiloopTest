@@ -1,0 +1,285 @@
+navigation-bar #navigation-bar__logo {
+  height: 100%;
+  margin: 15px 47px;
+  max-width: 72px;
+}
+navigation-bar #navigation-bar__title {
+  font-family: Avenir-Medium;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+navigation-bar #navigation-bar__menu-icon {
+  display: none;
+}
+navigation-bar nav {
+  top: 9%;
+  right: 3%;
+  position: absolute;
+}
+navigation-bar nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #79797f;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 48em) {
+  navigation-bar #navigation-bar__logo {
+    margin: 7.2px 18px;
+    width: 44px;
+  }
+  navigation-bar #navigation-bar__title {
+    font-size: 1em;
+  }
+  navigation-bar #navigation-bar__menu-icon {
+    padding: 13px;
+    height: 48px;
+    float: right;
+    cursor: pointer;
+    display: initial;
+    width: 45px;
+    background-color: #1e1e2d;
+    background-image: url(assets/images/menuIcon-open.png);
+    background-repeat: no-repeat;
+    background-size: 66%;
+    background-position: 13px;
+  }
+  navigation-bar .navigation-bar__menu-icon--close {
+    background-image: url(assets/images/menuIcon-close.png) !important;
+  }
+  navigation-bar nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    background-color: #2a2f4d;
+    width: 100%;
+    top: 74px;
+    bottom: 0;
+    right: 0;
+  }
+  navigation-bar nav a {
+    width: 50%;
+    display: block;
+    margin: 0px;
+    padding-top: 15px;
+    background-position: 22vw 10vh;
+    color: #ffffff;
+    font-family: Avenir-light;
+  }
+  navigation-bar nav a:nth-child(1) {
+    background-color: #e59398;
+  }
+  navigation-bar nav a:nth-child(2) {
+    background-color: #44476a;
+  }
+  navigation-bar nav a:nth-child(3) {
+    background-color: #1e1e2d;
+  }
+  navigation-bar nav div {
+    margin: 17vh 0 6vh 0;
+    font-size: 6em;
+  }
+  navigation-bar .navigation-bar__nav--hidden {
+    display: none;
+  }
+}
+#carousel__panel {
+  list-style: none;
+  display: flex;
+}
+#carousel__panel .carousel__panel-image {
+  width: 62.5%;
+  background-repeat: no-repeat;
+  padding-bottom: 36.84%;
+  background-size: cover;
+  background-image: url(assets/images/covers.jpg);
+}
+#carousel__panel .carousel__panel-image--hologram {
+  background-position: 0;
+}
+#carousel__panel .carousel__panel-image--toyota-vr {
+  background-position: 33.33%;
+}
+#carousel__panel .carousel__panel-image--human-beats {
+  background-position: 66.66%;
+}
+#carousel__panel .carousel__panel-image--audi-mind-race {
+  background-position: 99.99%;
+}
+#carousel__panel #carousel__panel-info {
+  padding-top: 17%;
+  color: #ffffff;
+  width: 37.5%;
+  background-color: #1e1e2d;
+  position: relative;
+}
+#carousel__panel #carousel__panel-info #carousel__panel-title {
+  left: 11%;
+  bottom: 43%;
+  position: absolute;
+}
+#carousel__panel #carousel__panel-info #carousel__panel-subtitle {
+  left: 11%;
+  bottom: 25%;
+  position: absolute;
+}
+#carousel__panel #carousel__panel-info #carousel__panel-author {
+  position: absolute;
+  bottom: 7%;
+  left: 11%;
+  text-transform: capitalize;
+}
+#carousel__products-wrap {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+#carousel__products-wrap #carousel__marker {
+  position: absolute;
+  width: 25%;
+  padding-bottom: 23.1%;
+  transition: 0.2s ease-in-out;
+}
+#carousel__products-wrap #carousel__marker #carousel__marker-square {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border-style: solid;
+  border-width: 1vw;
+  border-color: #e59398;
+}
+#carousel__products-wrap #carousel__marker #carousel__marker-arrow-up {
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 2vw solid #e59398;
+  position: relative;
+  bottom: 1.7vw;
+  left: 43%;
+}
+#carousel__products-wrap .carousel__product {
+  background-repeat: no-repeat;
+  width: 25%;
+}
+#carousel__products-wrap .carousel__product img {
+  width: 100%;
+}
+#carousel__products-wrap .carousel__product .carousel__product-title-mobile {
+  display: none;
+}
+@media screen and (max-width: 48em) {
+  #carousel__panel {
+    display: none;
+  }
+  .carousel__product-title-mobile {
+    display: block !important;
+    margin: 8% 0 14% 13%;
+    text-transform: capitalize;
+  }
+  #carousel__products-wrap {
+    flex-wrap: wrap;
+  }
+  #carousel__products-wrap #carousel__marker {
+    display: none;
+  }
+  #carousel__products-wrap .carousel__product {
+    width: 50%;
+  }
+}
+@font-face {
+  font-family: Avenir-Black;
+  src: url(assets/fonts/avenir-black.woff) format('woff'), url(assets/fonts/avenir-black.woff2) format('woff2');
+}
+@font-face {
+  font-family: Avenir-Medium;
+  src: url(assets/fonts/avenir-medium.woff) format('woff'), url(assets/fonts/avenir-medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: Avenir-Roman;
+  src: url(assets/fonts/avenir-roman.woff) format('woff'), url(assets/fonts/avenir-roman.woff2) format('woff2');
+}
+@font-face {
+  font-family: Avenir-Light;
+  src: url(assets/fonts/avenir-light.woff) format('woff'), url(assets/fonts/avenir-light.woff2) format('woff2');
+}
+body {
+  font-family: Avenir-Roman;
+  line-height: 1.6em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2em;
+  font-family: Avenir-Black;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#content {
+  flex: 1;
+}
+#about {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+#about #about__image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#about #about__content {
+  width: 100%;
+}
+#about #about__content-wrap {
+  margin: 24% 20px 20px 20px;
+}
+#about #about__title {
+  margin-bottom: 5%;
+}
+footer {
+  background-color: #44476a;
+  color: #ffffff;
+  font-style: 0.8em;
+  font-family: Avenir-Light;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+footer p {
+  margin: 27px 7px;
+}
+footer p span {
+  color: #e59398;
+}
+@media screen and (max-width: 48em) {
+  #about__content-wrap {
+    margin: 0 20px 20px 20px !important;
+  }
+  #about__title {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer #footer__address {
+    margin-left: auto;
+    width: 50%;
+    text-align: end;
+  }
+  footer p {
+    margin: 10px 20px;
+  }
+}

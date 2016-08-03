@@ -1,0 +1,19 @@
+<ul id="carousel__panel">
+  <li class="carousel__panel-image animated fadeIn" ng-class="'carousel__panel-image--' + vm.currentProduct.id">
+  </li>
+  <li id="carousel__panel-info">
+    <h1 id="carousel__panel-title">{{vm.currentProduct.title}}</h1>
+    <h2 id="carousel__panel-subtitle">{{vm.currentProduct.subtitle}}</h2>
+    <span id="carousel__panel-author">{{vm.currentProduct.author}}</span>
+  </li>
+</ul>
+<ul id="carousel__products-wrap" ng-mouseover="vm.pauseCarousel()" ng-mouseleave="vm.startCarousel()">
+  <div id="carousel__marker">
+    <div id="carousel__marker-arrow-up"></div>
+    <div id="carousel__marker-square"></div>
+  </div>
+  <li ng-repeat="product in vm.products" class="carousel__product" ng-mouseover="vm.showProduct(product)">
+    <img ng-src="{{product.squareImgUrl}}">
+    <span class="carousel__product-title-mobile"> {{product.title}}</span>
+  </li>
+</ul>

@@ -1,0 +1,130 @@
+@import '/navigation-bar/navigation-bar.less';
+@import '/carousel/carousel.less';
+
+
+@darkBlue: #1e1e2d;
+@softBlue: #2a2f4d;
+@darkGray: #44476a;
+@lightGray: #79797f;
+@lightPink: #e59398;
+@white: #ffffff;
+
+@primaryColor: @darkBlue;
+
+@font-face {
+  font-family: Avenir-Black;
+  src: url(assets/fonts/avenir-black.woff) format('woff'),
+       url(assets/fonts/avenir-black.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Avenir-Medium;
+  src: url(assets/fonts/avenir-medium.woff) format('woff'),
+       url(assets/fonts/avenir-medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: url(assets/fonts/avenir-roman.woff) format('woff'),
+       url(assets/fonts/avenir-roman.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Avenir-Light;
+  src: url(assets/fonts/avenir-light.woff) format('woff'),
+       url(assets/fonts/avenir-light.woff2) format('woff2');
+}
+
+body {
+  font-family: Avenir-Roman;
+  line-height: 1.6em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: Avenir-Black;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.row {
+  margin-right: 0;
+  margin-left:  0;
+}
+
+#content {
+  flex: 1;
+}
+
+#about {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  #about__image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #about__content {
+    width: 100%;
+  }
+
+  #about__content-wrap {
+    margin: 24% 20px 20px 20px;
+  }
+
+  #about__title {
+    margin-bottom: 5%;
+  }
+
+}
+
+footer {
+  background-color: @darkGray;
+  color: @white;
+  font-style: 0.8em;
+  font-family: Avenir-Light;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  p {
+    margin: 27px 7px;
+    span {
+      color: @lightPink;
+    }
+  }
+}
+
+@media screen and (max-width: 48em) {
+
+  #about__content-wrap {
+    margin: 0 20px 20px 20px !important;
+  }
+
+  #about__title {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    #footer__address {
+      margin-left: auto;
+      width: 50%;
+      text-align: end;
+    }
+    p {
+      margin: 10px 20px;
+    }
+  }
+  
+}

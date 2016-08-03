@@ -1,0 +1,111 @@
+#carousel__panel{
+  list-style: none;
+  display: flex;
+  .carousel__panel-image{
+    width: 62.5%;    
+    background-repeat: no-repeat;
+    padding-bottom: 36.84%;
+    background-size: cover;
+    background-image: url(assets/images/covers.jpg)
+  }
+  .carousel__panel-image--hologram {
+    background-position: 0;  
+  }
+  .carousel__panel-image--toyota-vr {
+    background-position: 33.33%;  
+  }
+  .carousel__panel-image--human-beats {
+    background-position: 66.66%;  
+  }
+  .carousel__panel-image--audi-mind-race {
+    background-position: 99.99%;  
+  } 
+  #carousel__panel-info{
+    padding-top: 17%;
+    color: @white;
+    width: 37.5%;
+    background-color: @primaryColor;
+    position: relative;
+    #carousel__panel-title {
+      left: 11%;
+      bottom: 43%;
+      position: absolute;
+    }
+    #carousel__panel-subtitle {
+      left: 11%;
+      bottom: 25%;
+      position: absolute;
+    }
+    #carousel__panel-author {
+      position: absolute;
+      bottom: 7%;
+      left: 11%;
+      text-transform: capitalize;
+    }
+  }
+}
+
+#carousel__products-wrap {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  #carousel__marker {
+    position: absolute;
+    width: 25%;
+    padding-bottom: 23.1%;
+    transition: 0.2s ease-in-out;
+    #carousel__marker-square {
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      height: 100%;
+      border-style: solid;
+      border-width: 1vw;
+      border-color: @lightPink;
+    }
+    #carousel__marker-arrow-up {
+      width: 0;
+      height: 0;
+      float: left;
+      border-left: 2vw solid transparent;
+      border-right: 2vw solid transparent;
+      border-bottom: 2vw solid @lightPink;
+      position: relative;
+      bottom: 1.7vw;
+      left: 43%;
+    }
+  }
+  .carousel__product {
+    background-repeat: no-repeat;
+    width: 25%;
+    img{
+      width: 100%;
+    }
+    .carousel__product-title-mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 48em) {
+
+  #carousel__panel {
+    display: none;
+  }
+  
+  .carousel__product-title-mobile {
+    display: block !important;
+    margin: 8% 0 14% 13%;
+    text-transform: capitalize;
+  }
+
+  #carousel__products-wrap {
+    flex-wrap: wrap;
+    #carousel__marker {
+      display: none;
+    }
+    .carousel__product {
+      width: 50%;
+    }
+  }
+}
