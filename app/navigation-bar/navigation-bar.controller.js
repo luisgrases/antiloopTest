@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   angular
-    .module('myApp')
+    .module('antiloopTest')
     .controller('NavigationBarCtrl', NavigationBarCtrl);
 
   NavigationBarCtrl.$inject = [];

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('myApp')
+    .module('antiloopTest')
     .controller('CarouselCtrl', CarouselCtrl);
 
   CarouselCtrl.$inject = ['$interval', '$q']

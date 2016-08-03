@@ -2,7 +2,7 @@
   "use strict"
 
   angular
-    .module('myApp')
+    .module('antiloopTest')
     .component('carousel', {
       templateUrl: 'carousel/carousel.html',
       controller: 'CarouselCtrl',

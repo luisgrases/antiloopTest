@@ -2,7 +2,7 @@
   'use strict'
 
   angular
-    .module('myApp')
+    .module('antiloopTest')
     .component('navigationBar', {
       templateUrl: 'navigation-bar/navigation-bar.html',
       controller: 'NavigationBarCtrl',
